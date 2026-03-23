@@ -14,10 +14,14 @@ export default function Title() {
           }
         });
       },
+<<<<<<< HEAD
       {
         rootMargin: "-40% 0px -40% 0px",
         threshold: 0 
       }
+=======
+      { threshold: 0.5 }, // 50% visible = section active
+>>>>>>> 541d341 (gros travail ce soir ajout de script pour hero, concept, cursor, home, app, ajout de tailwind, ajout de componsant tel que lightrays, cursor, backtop, navbar, title et ajout d'image provisoir)
     );
 
     sections.forEach((section) => observer.observe(section));
