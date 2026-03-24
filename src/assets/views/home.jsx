@@ -1,13 +1,12 @@
 // views
 import Hero from "./hero";
 import Concept from "./concept";
-<<<<<<< HEAD
 import Faq from "./faq";
 import Contact from "./contact";
 import Experience from "./experience";
 import Tarif from "./tarif";
-=======
->>>>>>> 541d341 (gros travail ce soir ajout de script pour hero, concept, cursor, home, app, ajout de tailwind, ajout de componsant tel que lightrays, cursor, backtop, navbar, title et ajout d'image provisoir)
+import Faq from "./faq";
+import Contact from "./contact";
 
 // comp
 import LightRays from "../comp/lightRays";
