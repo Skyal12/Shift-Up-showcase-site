@@ -2,7 +2,7 @@ export default function contact() {
   return (
     <section
       id="contact"
-      className="contact w-full mx-auto flex flex-col h-auto p-20 pt-32 pb-32"
+      className="contact snap-center h-screen w-full mx-auto flex flex-col h-auto p-20 pt-32 pb-32"
     >
       <h3 className="text-3xl color-[#FFF] font-bold">Formulaire de contact</h3>
       <div className="container-form flex flex-col justify-center items-center gap-12 mt-12">

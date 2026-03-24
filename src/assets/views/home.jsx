@@ -3,6 +3,7 @@ import Hero from "./hero";
 import Concept from "./concept";
 import Faq from "./faq";
 import Contact from "./contact";
+import Tarif from "./tarif";
 
 // comp
 import LightRays from "../comp/lightRays";
@@ -28,6 +29,7 @@ export default function Home() {
         <Hero />
       </div>
       <Concept />
+      <Tarif />
       <Faq />
       <Contact />
     </>

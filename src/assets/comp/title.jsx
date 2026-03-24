@@ -26,7 +26,7 @@ export default function Title() {
     hero: null,
     concept: "Concept",
     faq: "FAQ",
-    tarification: "Tarification",
+    tarif: "Tarif",
     contact: "Contact",
   };
 
@@ -39,7 +39,11 @@ export default function Title() {
   if (!title) return null;
 
   return (
-    <div className="fixed bg-gray-800 text-white top-1/2 left-[-3%] w-[10%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center rotate-270">
+    <div
+      className={`fixed bg-gray-800 text-white top-1/2 w-[10%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center
+      ${title === "Tarif" ? "right-[-3%] rotate-90" : "left-[-3%] rotate-270"}
+      `}
+    >
       <h3 className="font-bold">{title}</h3>
     </div>
   );
