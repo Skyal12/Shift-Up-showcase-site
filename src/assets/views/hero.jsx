@@ -7,13 +7,13 @@ export default function Hero() {
       <h1>Hero</h1>
       <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h2>
       <div className="cta flex flex-row justify-center items-center gap-12 mt-12">
-        <a href="#">
-          <button className="bg-gray-800 text-white w-32 p-4 rounded-full cursor-none">
+        <a href="#concept">
+          <button className="bg-gray-800 text-white w-32 p-4 rounded-full cursor-none transform hover:scale-110 duration-300">
             Concept
           </button>
         </a>
-        <a href="#">
-          <button className="bg-gray-800 text-white w-32 p-4 rounded-full cursor-none">
+        <a href="#tarif">
+          <button className="bg-gray-800 text-white w-32 p-4 rounded-full cursor-none transform hover:scale-110 duration-300">
             Tarification
           </button>
         </a>
