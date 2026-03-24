@@ -1,19 +1,42 @@
+import { useEffect, useState } from "react";
 import logo from "../img/img-logo.jpg";
 
 export default function NavBar() {
+  const [shrink, setShrink] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShrink(window.scrollY > 600);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navBar z-5 sticky top-4 left-0 w-full h-12 text-white flex flex-row justify-between items-center">
-      <div className="logo flex justify-center items-center w-32">
+    <nav
+      className={`navBar z-5 sticky top-4 left-0 h-16 bg-gray-800 text-white flex flex-row items-center mx-auto transition-all duration-300
+        ${shrink ? "w-1/2 justify-around rounded-full" : "w-full justify-between rounded-none"}
+      `}
+    >
+      <div
+        className={`logo flex justify-center items-center transition-all duration-300
+        ${shrink ? "w-16" : "w-32"}
+      `}
+      >
         <a href="#">
           <img src={logo} alt="Logo" className="w-8 h-8" />
         </a>
       </div>
-
-      <div className="link flex justify-center items-center gap-12 w-2/4 text-sm">
-        <a href="#">Concept</a>
+      <div
+        className={`link flex mx-12 text-xs justify-center items-center transition-all duration-300
+        ${shrink ? "gap-4" : "gap-12"}
+      `}
+      >
+        <a href="#concept">Concept</a>
         <a href="#">Experience</a>
         <a href="#">Tarification</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   );

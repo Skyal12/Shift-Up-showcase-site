@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className="hero absolute top-0 left-0 w-full h-screen justify-center items-center flex flex-col">
+    <section
+      id="hero"
+      className="hero absolute top-0 left-0 w-full h-screen justify-center items-center flex flex-col"
+    >
       <h1>Hero</h1>
       <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h2>
       <div className="cta flex flex-row justify-center items-center gap-12 mt-12">
