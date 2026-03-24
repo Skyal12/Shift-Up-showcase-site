@@ -1,6 +1,8 @@
 // views
 import Hero from "./hero";
 import Concept from "./concept";
+import Faq from "./faq";
+import Contact from "./contact";
 
 // comp
 import LightRays from "../comp/lightRays";
@@ -26,6 +28,8 @@ export default function Home() {
         <Hero />
       </div>
       <Concept />
+      <Faq />
+      <Contact />
     </>
   );
 }

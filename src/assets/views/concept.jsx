@@ -22,7 +22,10 @@ export default function Concept() {
   };
 
   return (
-    <section className="concept bg-black text-white flex flex-col justify-center items-center w-full p-20">
+    <section
+      id="concept"
+      className="concept bg-black text-white flex flex-col justify-center items-center w-full p-20"
+    >
       <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
         <div
           className={`w-1/3 transition-transform duration-300 cursor-none ${

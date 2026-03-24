@@ -14,7 +14,7 @@ export default function Title() {
           }
         });
       },
-      { threshold: 0.5 }, // 50% visible = section active
+      { threshold: 0.5 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -25,14 +25,21 @@ export default function Title() {
   const titles = {
     hero: null,
     concept: "Concept",
+    faq: "FAQ",
+    tarification: "Tarification",
+    contact: "Contact",
   };
 
-  const title = titles[currentSection] || "";
+  const title = titles[currentSection];
 
+  // Pas de titre sur mobile
   if (window.innerWidth < 1024) return null;
 
+  // Si le titre est null → ne rien afficher
+  if (!title) return null;
+
   return (
-    <div className="fixed top-1/2 left-[-3%] w-auto z-10 transform origin-center rotate-270 ">
+    <div className="fixed bg-gray-800 text-white top-1/2 left-[-3%] w-[10%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center rotate-270">
       <h3 className="font-bold">{title}</h3>
     </div>
   );
