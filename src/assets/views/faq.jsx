@@ -34,11 +34,7 @@ export default function faq() {
   return (
     <section
       id="faq"
-<<<<<<< HEAD
       className="faq snap-center bg-white text-black flex justify-center items-center w-full h-screen p-16 pt-32 pb-32 gap-12"
-=======
-      className="faq bg-white text-black flex justify-center items-center w-full p-16 pt-32 pb-32 gap-12"
->>>>>>> 400853a (amelioration et ajout de script pour contact faq a continuer)
     >
       <div className="title w-1/3">
         <h3>FAQ</h3>
@@ -47,12 +43,7 @@ export default function faq() {
       <div className="question w-1/2">
         {faqs.map((faq, index) => (
           <div
-<<<<<<< HEAD
             className="border-b border-slate-200 py-4 w-full"
-=======
-            className="border-b border-slate-200 py-4 cursor-pointer w-full"
->>>>>>> 400853a (amelioration et ajout de script pour contact faq a continuer)
-            key={index}
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
           >
             <div className="flex items-center justify-between">
