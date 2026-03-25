@@ -3,10 +3,10 @@ import Hero from "./hero";
 import Concept from "./concept";
 import Faq from "./faq";
 import Contact from "./contact";
-import Experience from "./experience";
-import Tarif from "./tarif";
 import Faq from "./faq";
 import Contact from "./contact";
+import Tarif from "./tarif";
+import Experience from "./experience";
 
 // comp
 import LightRays from "../comp/lightRays";

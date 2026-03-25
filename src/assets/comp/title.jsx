@@ -16,8 +16,8 @@ export default function Title() {
       },
       {
         rootMargin: "-40% 0px -40% 0px",
+        threshold: 0.5,
       },
-      { threshold: 0.5 }, // 50% visible = section active
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -40,9 +40,6 @@ export default function Title() {
 
   // Pas de titre sur mobile
   if (window.innerWidth < 1024) return null;
-
-  // Si le titre est null ou n'existe pas → ne rien afficher
-  if (!title) return null;
 
   // Si le titre est null → ne rien afficher
   if (!title) return null;
