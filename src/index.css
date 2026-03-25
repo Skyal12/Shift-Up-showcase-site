@@ -57,14 +57,12 @@ body {
 }
 
 #root {
+<<<<<<< HEAD
   max-width: 100%;
   margin: 0 auto;
+=======
+>>>>>>> 3dbc19a (page expérience)
   text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
 }
 
 h1,

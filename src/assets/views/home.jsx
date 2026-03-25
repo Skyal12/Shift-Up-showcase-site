@@ -3,7 +3,11 @@ import Hero from "./hero";
 import Concept from "./concept";
 import Faq from "./faq";
 import Contact from "./contact";
+<<<<<<< HEAD
 import Tarif from "./tarif";
+=======
+import Experience from "./experience";
+>>>>>>> 3dbc19a (page expérience)
 
 // comp
 import LightRays from "../comp/lightRays";
@@ -29,7 +33,11 @@ export default function Home() {
         <Hero />
       </div>
       <Concept />
+<<<<<<< HEAD
       <Tarif />
+=======
+        <Experience />
+>>>>>>> 3dbc19a (page expérience)
       <Faq />
       <Contact />
     </>
