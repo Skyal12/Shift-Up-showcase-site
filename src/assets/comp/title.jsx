@@ -16,8 +16,8 @@ export default function Title() {
       },
       {
         rootMargin: "-40% 0px -40% 0px",
-        threshold: 0 
-      }
+        threshold: 0,
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -38,20 +38,12 @@ export default function Title() {
 
   // Pas de titre sur mobile
   if (window.innerWidth < 1024) return null;
-  
+
   // Si le titre est null ou n'existe pas → ne rien afficher
   if (!title) return null;
 
   return (
-<<<<<<< HEAD
-    <div
-      className={`fixed bg-gray-800 text-white top-1/2 w-[10%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center
-      ${title === "Tarif" ? "right-[-3%] rotate-90" : "left-[-3%] rotate-270"}
-      `}
-    >
-=======
-    <div className="hidden lg:flex fixed bg-gray-800 text-white top-1/2 left-[-3%] w-[10%] h-12 justify-center rounded-md items-center z-20 transform origin-center rotate-270">
->>>>>>> 3dbc19a (page expérience)
+    <div className="fixed bg-gray-800 text-white top-1/2 w-[15%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center left-[-5.5%] rotate-270">
       <h3 className="font-bold">{title}</h3>
     </div>
   );
