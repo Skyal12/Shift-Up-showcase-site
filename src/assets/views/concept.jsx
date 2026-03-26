@@ -24,7 +24,7 @@ export default function Concept() {
   return (
     <section
       id="concept"
-      className="concept bg-black text-white flex flex-col justify-center items-center w-full p-20"
+      className="concept snap-center h-screen bg-black text-white flex flex-col justify-center items-center w-full p-20"
     >
       <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
         <div
