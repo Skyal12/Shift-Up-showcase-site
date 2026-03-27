@@ -4,8 +4,14 @@ export default function contact() {
       id="contact"
       className="contact snap-center h-screen w-full mx-auto flex flex-col h-auto p-20 pt-32 pb-32"
     >
-      <h3 className="text-3xl color-[#FFF] font-bold">Formulaire de contact</h3>
-      <div className="container-form flex flex-col justify-center items-center gap-12 mt-12">
+      <h3 className="text-4xl color-[#FFF] font-bold mb-4">
+        Parlons de votre projet
+      </h3>
+      <p className="text-xl color-[#FFF]">
+        Vous souhaitez engager vos équipes et structurer votre démarche RSE ?
+        Nos équipes vous accompagnent.
+      </p>
+      <div className="container-form flex flex-col justify-center items-center gap-12 mt-16">
         <form>
           <div className="flex flex-row gap-8 mb-8">
             <input
