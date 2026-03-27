@@ -16,11 +16,7 @@ export default function Title() {
       },
       {
         rootMargin: "-40% 0px -40% 0px",
-<<<<<<< HEAD
-        threshold: 0.5,
-=======
         threshold: 0,
->>>>>>> c3a4f9e (changement de title)
       },
     );
 
@@ -35,8 +31,6 @@ export default function Title() {
     experience: "Expérience",
     faq: "FAQ",
     tarif: "Tarif",
-    faq: "FAQ",
-    tarif: "Tarif",
     contact: "Contact",
   };
 
@@ -45,19 +39,11 @@ export default function Title() {
   // Pas de titre sur mobile
   if (window.innerWidth < 1024) return null;
 
-<<<<<<< HEAD
   // Si le titre est null → ne rien afficher
   if (!title) return null;
 
   return (
-    <div className="fixed bg-gray-800 text-white top-1/2 left-[-3%] w-[10%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center rotate-270">
-=======
-  // Si le titre est null ou n'existe pas → ne rien afficher
-  if (!title) return null;
-
-  return (
     <div className="fixed bg-gray-800 text-white top-1/2 w-[15%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center left-[-5.5%] rotate-270">
->>>>>>> c3a4f9e (changement de title)
       <h3 className="font-bold">{title}</h3>
     </div>
   );

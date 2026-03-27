@@ -44,6 +44,7 @@ export default function faq() {
         {faqs.map((faq, index) => (
           <div
             className="border-b border-slate-200 py-4 w-full"
+            key={index}
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
           >
             <div className="flex items-center justify-between">
