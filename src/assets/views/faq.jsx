@@ -5,29 +5,29 @@ export default function faq() {
 
   const faqs = [
     {
-      question: "How to use this component?",
+      question: "Comment éviter la triche ?",
       answer:
-        "To use this component, you need to import it in your project and use it in your JSX code. Here's an example of how to use it:",
+        "Les actions sont validées via preuve photo et contrôles intégrés pour garantir leur authenticité.",
     },
     {
-      question: "Are there any other components available?",
+      question: "Est-ce conforme au RGPD ?",
       answer:
-        "Yes, there are many other components available in this library. You can find them in the 'Components' section of the website.",
+        "Oui, toutes les données sont hébergées en Europe et respectent les normes RGPD.",
     },
     {
-      question: "Are components responsive?",
+      question: "Est-ce adapté aux grandes entreprises ?",
       answer:
-        "Yes, all components are responsive and can be used on different screen sizes.",
+        "Oui, la solution est conçue pour des structures de 100 à 2000+ collaborateurs.",
     },
     {
-      question: "Can I customize the components?",
+      question: "Est-ce une certification RSE ?",
       answer:
-        "Yes, you can customize the components by passing props to them. You can find more information about customizing components in the 'Customization' section of the website.",
+        "Non, Shift’Up est un outil d’accompagnement qui vous aide à structurer et piloter votre démarche RSE.",
     },
     {
-      question: "Can I customize the components?",
+      question: "Combien de temps pour déployer ?",
       answer:
-        "Yes, you can customize the components by passing props to them. You can find more information about customizing components in the 'Customization' section of the website.",
+        "Quelques jours suffisent pour lancer les premières missions et engager vos équipes.",
     },
   ];
 
@@ -37,8 +37,8 @@ export default function faq() {
       className="faq snap-center bg-white text-black flex justify-center items-center w-full h-screen p-16 pt-32 pb-32 gap-12"
     >
       <div className="title w-1/3">
-        <h3>FAQ</h3>
-        <h4>Questions fréquente</h4>
+        <h3 className="text-4xl mb-4">FAQ</h3>
+        <h4 className="text-2xl">Question frequente</h4>
       </div>
       <div className="question w-1/2">
         {faqs.map((faq, index) => (

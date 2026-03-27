@@ -3,8 +3,11 @@ import Hero from "./hero";
 import Concept from "./concept";
 import Faq from "./faq";
 import Contact from "./contact";
+<<<<<<< HEAD
 import Faq from "./faq";
 import Contact from "./contact";
+=======
+>>>>>>> 42c2530 (travail du 27 mars, mise du contenu et reglage de bug)
 import Tarif from "./tarif";
 import Experience from "./experience";
 
@@ -32,8 +35,13 @@ export default function Home() {
         <Hero />
       </div>
       <Concept />
+<<<<<<< HEAD
       <Experience />
       <Tarif />
+=======
+      <Tarif />
+      <Experience />
+>>>>>>> 42c2530 (travail du 27 mars, mise du contenu et reglage de bug)
       <Faq />
       <Contact />
     </>

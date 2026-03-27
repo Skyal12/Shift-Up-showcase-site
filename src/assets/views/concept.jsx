@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import imgProbleme from "../img/img-probleme.webp";
-import imgSolution from "../img/img-solution.webp";
-import imgSoutien from "../img/img-aide.jpg";
+import imgProbleme from "../img/img-probleme.jpg";
+import imgSolution from "../img/img-solution.jpg";
+import imgSoutien from "../img/img-resultat.jpg";
 
 export default function Concept() {
   const [active, setActive] = useState("probleme");
 
   const content = {
     probleme: {
-      title: "Le problème",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      title: "Une RSE souvent théorique",
+      text: "Malgré les engagements, de nombreuses entreprises peinent à mobiliser leurs équipes. Manque d’adhésion, absence d’indicateurs concrets, actions peu visibles : la RSE reste souvent déconnectée du terrain.",
     },
     solution: {
-      title: "La solution",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      title: "Une approche concrète et engageante",
+      text: "Shift’Up transforme la RSE en actions quotidiennes grâce à la gamification. Chaque collaborateur participe via des missions simples, mesurées et valorisées dans une logique collective.",
     },
     soutien: {
-      title: "Notre aide / soutien",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      title: "Un impact mesurable et durable",
+      text: "Résultat : une meilleure cohésion interne, une performance optimisée et des indicateurs clairs pour piloter votre stratégie RSE. La transition devient visible, mesurable et engageante.",
     },
   };
 
@@ -29,7 +29,7 @@ export default function Concept() {
       <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
         <div
           className={`w-1/3 transition-transform duration-300 cursor-none ${
-            active === "probleme" ? "scale-y-125" : "hover:scale-y-105"
+            active === "probleme" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("probleme")}
         >
@@ -37,7 +37,7 @@ export default function Concept() {
         </div>
         <div
           className={`w-1/3 transition-transform duration-300 cursor-none ${
-            active === "solution" ? "scale-y-125" : "hover:scale-y-105"
+            active === "solution" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("solution")}
         >
@@ -45,11 +45,11 @@ export default function Concept() {
         </div>
         <div
           className={`w-1/3 transition-transform duration-300 cursor-none ${
-            active === "soutien" ? "scale-y-125" : "hover:scale-y-105"
+            active === "soutien" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("soutien")}
         >
-          <img src={imgSoutien} alt="Image de notre aide/soutien" />
+          <img src={imgSoutien} alt="Image du resultat avec notre aide" />
         </div>
       </div>
 

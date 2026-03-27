@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../img/img-logo.jpg";
+import logo from "../img/img-logo.png";
 
 export default function NavBar() {
   const [shrink, setShrink] = useState(false);
@@ -30,7 +30,7 @@ export default function NavBar() {
       `}
       >
         <a href="#">
-          <img src={logo} alt="Logo" className="w-8 h-8" />
+          <img src={logo} alt="Logo" className="w-12 h-12" />
         </a>
       </div>
       <div
