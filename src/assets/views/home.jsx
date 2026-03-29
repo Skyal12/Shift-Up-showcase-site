@@ -5,6 +5,7 @@ import Faq from "./faq";
 import Contact from "./contact";
 import Tarif from "./tarif";
 import Experience from "./experience";
+import Rassurer from "./rassurer";
 
 // comp
 import LightRays from "../comp/lightRays";
@@ -14,7 +15,7 @@ export default function Home() {
       <div style={{ width: "100%", height: "100vh", position: "relative" }}>
         <LightRays
           raysOrigin="top-center"
-          raysColor="#ffffff"
+          raysColor="#ff4800"
           raysSpeed={1}
           lightSpread={0.5}
           rayLength={3}
@@ -30,8 +31,9 @@ export default function Home() {
         <Hero />
       </div>
       <Concept />
-      <Tarif />
       <Experience />
+      <Rassurer />
+      <Tarif />
       <Faq />
       <Contact />
     </>

@@ -15,8 +15,8 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`navBar z-5 sticky top-4 left-0 h-16 backdrop-blur-md bg-[#00000070] text-white flex flex-row items-center mx-auto transition-all duration400
-        ${shrink ? "w-1/2 justify-around rounded-full" : "w-full justify-between rounded-none "}
+      className={`navBar z-5 sticky top-4 left-0 h-16 backdrop-blur-md text-white flex flex-row items-center mx-auto transition-all duration400
+        ${shrink ? "w-1/2 justify-around rounded-full bg-[#ff480090]" : "w-full justify-between rounded-none bg-[#ff480099]"}
       `}
     >
       <div

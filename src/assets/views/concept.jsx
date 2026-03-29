@@ -9,7 +9,7 @@ export default function Concept() {
   const content = {
     probleme: {
       title: "Une RSE souvent théorique",
-      text: "Malgré les engagements, de nombreuses entreprises peinent à mobiliser leurs équipes. Manque d’adhésion, absence d’indicateurs concrets, actions peu visibles : la RSE reste souvent déconnectée du terrain.",
+      text: "Malgré les engagements, de nombreuses entreprises peinent à mobiliser leurs équipes. Manque d’adhésion, absence d’indicateurs concrets, actions peu visibles",
     },
     solution: {
       title: "Une approche concrète et engageante",
@@ -24,7 +24,7 @@ export default function Concept() {
   return (
     <section
       id="concept"
-      className="concept snap-center h-screen bg-black text-white flex flex-col justify-center items-center w-full p-20"
+      className="concept snap-center h-screen bg-[#009378] text-white flex flex-col justify-center items-center w-full p-20"
     >
       <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
         <div
