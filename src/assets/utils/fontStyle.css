@@ -1,15 +1,21 @@
 @font-face {
-  font-family: "principal";
-  src: url(./assets/font/stacked.otf) format("opentype");
+  font-family: "primary";
+  src: url("/src/assets/font/Stacked.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "secondary";
-  src: url(./assets/font/bahnschrift.ttf) format("truetype");
+  src: url("/src/assets/font/Bahnschrift.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-.font-principal {
-  font-family: "principal", sans-serif;
+.font-primary {
+  font-family: "primary", sans-serif;
 }
 
 .font-secondary {

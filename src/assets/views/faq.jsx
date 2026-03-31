@@ -37,8 +37,8 @@ export default function faq() {
       className="faq snap-center bg-white text-black flex justify-center items-center w-full h-screen p-16 pt-32 pb-32 gap-12"
     >
       <div className="title w-1/3">
-        <h3 className="text-4xl mb-4">FAQ</h3>
-        <h4 className="text-2xl">Question frequente</h4>
+        <h3 className="font-primary text-4xl mb-4">FAQ</h3>
+        <h4 className="font-secondary text-2xl">Question frequente</h4>
       </div>
       <div className="question w-1/2">
         {faqs.map((faq, index) => (

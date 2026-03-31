@@ -69,7 +69,7 @@ export default function Tarif() {
           onClick={() => setActive("pro")}
         >
           <div className="title w-full flex flex-row justify-around items-center">
-            <h3 className="underline offset-2 font-bold">
+            <h3 className="font-primary underline text-2xl offset-2 font-bold">
               {content.pro.title}
             </h3>
             <p>{content.pro.prix}</p>
@@ -88,7 +88,7 @@ export default function Tarif() {
           onClick={() => setActive("proPlus")}
         >
           <div className="title w-full flex flex-row justify-around items-center">
-            <h3 className="underline offset-2 font-bold">
+            <h3 className="font-primary underline text-2xl offset-2 font-bold">
               {content.proPlus.title}
             </h3>
             <p>{content.proPlus.prix}</p>
@@ -107,7 +107,7 @@ export default function Tarif() {
           onClick={() => setActive("business")}
         >
           <div className="title w-full flex flex-row justify-around items-center">
-            <h3 className="underline offset-2 font-bold">
+            <h3 className="font-primary underline text-2xl offset-2 font-bold">
               {content.business.title}
             </h3>
             <p>{content.business.prix}</p>
@@ -123,7 +123,7 @@ export default function Tarif() {
       <div className="container-info bg-[#FFF] text-black w-full h-4/4 md:w-1/2 md:h-4/4 rounded-xl p-4 flex flex-col justify-center">
         <div className="topLine flex flex-row  justify-around">
           <h3
-            className={`title text-3xl font-bold underline ${active === "business" ? "relative top-2" : ""}`}
+            className={`title font-primary underline text-5xl font-bold ${active === "business" ? "relative top-2" : ""}`}
           >
             {content[active].title}
           </h3>

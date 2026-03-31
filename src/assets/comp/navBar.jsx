@@ -15,7 +15,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`navBar z-5 sticky top-4 left-0 h-16 backdrop-blur-md text-white flex flex-row items-center mx-auto transition-all duration400
+      className={`navBar font-secondary z-200 sticky top-4 left-0 h-16 backdrop-blur-md text-white flex flex-row items-center mx-auto transition-all duration400
         ${shrink ? "w-3/4 lg:w-1/2 justify-center lg:justify-around rounded-full bg-[#ff480090]" : "w-full justify-between rounded-none bg-[#ff480099]"}
       `}
     >
@@ -35,7 +35,7 @@ export default function NavBar() {
       >
         <a href="#concept">Concept</a>
         <a href="#experience">Experience</a>
-        <a href="#tarif">Tarification</a>
+        <a href="#tarif">Tarifs</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>

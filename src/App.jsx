@@ -1,5 +1,6 @@
 import Home from "./assets/views/home";
 import "./App.css";
+import "./assets/utils/fontStyle.css";
 
 // comp
 import Cursor from "./assets/comp/cursor";

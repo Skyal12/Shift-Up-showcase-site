@@ -6,6 +6,7 @@ import Contact from "./contact";
 import Tarif from "./tarif";
 import Experience from "./experience";
 import Rassurer from "./rassurer";
+import Footer from "./footer";
 
 // comp
 import LightRays from "../comp/lightRays";
@@ -42,6 +43,7 @@ export default function Home() {
       <Tarif />
       <Faq />
       <Contact />
+      <Footer />
     </>
   );
 }

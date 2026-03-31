@@ -113,7 +113,7 @@ export default function Rassurer() {
       id="rassurer"
       className="rassurer w-full bg-[#fff] py-20 flex flex-col items-center gap-12"
     >
-      <h3 className="text-3xl font-bold text-[#ff4800] text-left w-full pl-16">
+      <h3 className="font-secondary text-3xl font-bold text-[#ff4800] text-left w-full pl-16">
         Ils nous font confiance
       </h3>
       <div className="slider-container mb-20">
@@ -134,7 +134,7 @@ export default function Rassurer() {
         </div>
       </div>
 
-      <h3 className="text-3xl font-bold text-[#ff4800] text-left w-full pl-16">
+      <h3 className="font-secondary text-3xl font-bold text-[#ff4800] text-left w-full pl-16">
         Pourquoi Shift-Up ?
       </h3>
       <div className="flex flex-row justify-center items-start px-12 gap-16">

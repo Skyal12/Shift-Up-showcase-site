@@ -1,15 +1,13 @@
-import "../utils/fontStyle.css";
-
 export default function Hero() {
   return (
     <section
       id="hero"
       className="hero absolute top-0 left-0 w-full h-screen justify-center items-center flex flex-col"
     >
-      <h1 className="text-5xl font-bold text-[#ff4800] mx-auto text-center font-principal">
-        Boostez l’engagement votre RSE
+      <h1 className="font-primary text-5xl font-bold w-auto h-auto text-[#ff4800] mx-auto text-center">
+        Boostez l’engagement RSE
       </h1>
-      <h2 className="text-center mt-8 text-2xl text-[#ff4800] font-secondary">
+      <h2 className="font-secondary text-center mt-8 text-2xl text-[#ff4800] font-secondary">
         Transformez votre stratégie RSE en actions concrètes grâce vos équipes.
       </h2>
       <div className="cta flex flex-row justify-center items-center gap-12 mt-12">

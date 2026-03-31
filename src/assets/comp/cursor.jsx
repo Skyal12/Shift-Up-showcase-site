@@ -39,7 +39,7 @@ export default function Cursor() {
   }, []);
   return (
     <>
-      <div className="cursor fixed z-50 top-0 left-0 w-4 h-4 bg-orange-500 opacity-75 rounded-full pointer-events-none"></div>
+      <div className="cursor fixed z-400 top-0 left-0 w-4 h-4 bg-[#ff4800] opacity-75 rounded-full pointer-events-none"></div>
     </>
   );
 }

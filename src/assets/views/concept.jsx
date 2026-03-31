@@ -54,9 +54,9 @@ export default function Concept() {
       </div>
 
       <div className="container-text flex flex-col gap-6 w-full">
-        <h2 className="text-start pl-8 font-bold underline underline-offset-4 text-4xl">
+        <h3 className="text-start font-secondary pl-8 font-bold underline underline-offset-4 text-3xl">
           {content[active].title}
-        </h2>
+        </h3>
         <p className="text-lg leading-relaxed">{content[active].text}</p>
       </div>
     </section>
