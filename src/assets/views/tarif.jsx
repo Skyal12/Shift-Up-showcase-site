@@ -63,7 +63,7 @@ export default function Tarif() {
     >
       <div className="container-offers w-1/2 flex flex-col md:flex-col justify-center items-center">
         <div
-          className={`offer1 mb-12 w-4/5 h-50 md:h-32 rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
+          className={`offer1 mb-12 w-4/5 h-50 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "pro" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("pro")}
@@ -82,7 +82,7 @@ export default function Tarif() {
         </div>
 
         <div
-          className={`offer2 mb-12 w-4/5 h-50 md:h-32 rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
+          className={`offer2 mb-12 w-4/5 h-50 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "proPlus" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("proPlus")}
@@ -95,13 +95,13 @@ export default function Tarif() {
           </div>
           <div className="details w-full flex flex-row justify-around items-center">
             <p className="text-center pl-4 pr-4 pt-2">
-              Conçue pour les entreprises en croissance
+              Conçue pour les entreprises en developpement
             </p>
           </div>
         </div>
 
         <div
-          className={`offer3 mb-12 w-4/5 h-50 md:h-32 rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
+          className={`offer3 mb-12 w-4/5 h-50 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "business" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("business")}
@@ -120,7 +120,7 @@ export default function Tarif() {
         </div>
       </div>
 
-      <div className="container-info bg-[#FFF] text-black w-full h-4/4 md:w-1/2 md:h-4/4 rounded-xl p-4 flex flex-col justify-center">
+      <div className="container-info bg-[#FFF] shadow-lg text-black w-full h-4/4 md:w-1/2 md:h-4/4 rounded-xl p-4 flex flex-col justify-center">
         <div className="topLine flex flex-row  justify-around">
           <h3
             className={`title font-primary underline text-5xl font-bold ${active === "business" ? "relative top-2" : ""}`}
@@ -147,7 +147,7 @@ export default function Tarif() {
         </div>
         <div className={`cta flex flex-row justify-center items-center mt-4`}>
           <a href="#contact">
-            <button className="bg-[#1ee494] text-white w-32 p-4 rounded-full cursor-none transform hover:scale-110 duration-300 hover:bg-[#1ee494]/80">
+            <button className="bg-[#1ee494] shadow-md shadow-green-500/50 text-white w-32 p-4 rounded-full cursor-none transform hover:scale-110 duration-300 hover:bg-[#1ee494]/80">
               Contact
             </button>
           </a>

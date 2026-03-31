@@ -56,7 +56,7 @@ export default function contact() {
           </div>
           <button
             type="submit"
-            className="w-1/3 h-12 text-white rounded-full bg-[#1ee494] hover:bg-[#1ee494]/80 hover:text-white transition-all duration-300 cursor-none hover:scale-105"
+            className="w-1/3 h-12 shadow-md shadow-green-500/50 text-white rounded-full bg-[#1ee494] hover:bg-[#1ee494]/80 hover:text-white transition-all duration-300 cursor-none hover:scale-105"
           >
             Envoyer
           </button>

@@ -28,28 +28,40 @@ export default function Concept() {
     >
       <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
         <div
-          className={`w-1/3 lg:w-1/5 transition-transform duration-300 cursor-none ${
+          className={`w-1/3 lg:w-1/5 shadow-2xl transition-transform duration-300 cursor-none ${
             active === "probleme" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("probleme")}
         >
-          <img src={imgProbleme} alt="Image du problème" />
+          <img
+            src={imgProbleme}
+            alt="Image du problème"
+            className="rounded-xl"
+          />
         </div>
         <div
-          className={`w-1/3 lg:w-1/5 transition-transform duration-300 cursor-none ${
+          className={`w-1/3 lg:w-1/5 shadow-2xl transition-transform duration-300 cursor-none  ${
             active === "solution" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("solution")}
         >
-          <img src={imgSolution} alt="Image de la solution" />
+          <img
+            src={imgSolution}
+            alt="Image de la solution"
+            className="rounded-xl"
+          />
         </div>
         <div
-          className={`w-1/3 lg:w-1/5 transition-transform duration-300 cursor-none ${
+          className={`w-1/3 lg:w-1/5 shadow-2xl transition-transform duration-300 cursor-none ${
             active === "soutien" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("soutien")}
         >
-          <img src={imgSoutien} alt="Image du resultat avec notre aide" />
+          <img
+            src={imgSoutien}
+            alt="Image du resultat avec notre aide"
+            className="rounded-xl"
+          />
         </div>
       </div>
 

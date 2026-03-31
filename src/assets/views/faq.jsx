@@ -7,7 +7,7 @@ export default function faq() {
     {
       question: "Comment éviter la triche ?",
       answer:
-        "Les actions sont validées via preuve photo et contrôles intégrés pour garantir leur authenticité.",
+        "Les défis sont limitées à des cycle journaliers et hebdomadaires afin de garantir la fiabilité des données.",
     },
     {
       question: "Est-ce conforme au RGPD ?",

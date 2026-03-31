@@ -12,12 +12,12 @@ export default function Hero() {
       </h2>
       <div className="cta flex flex-row justify-center items-center gap-12 mt-12">
         <a href="#concept">
-          <button className="bg-[#1ee494] text-white w-40 p-4 rounded-full cursor-none transform hover:scale-110 hover:bg-[#1ee494]/80 duration-300">
+          <button className="bg-[#1ee494] shadow-md shadow-green-500/50 text-white w-40 p-4 rounded-full cursor-none transform hover:scale-110 hover:bg-[#1ee494]/80 duration-300">
             Concept
           </button>
         </a>
         <a href="#tarif">
-          <button className="bg-[#1ee494] text-white w-40 p-4 rounded-full cursor-none transform hover:scale-110 hover:bg-[#1ee494]/80 duration-300">
+          <button className="bg-[#1ee494] shadow-md shadow-green-500/50 text-white w-40 p-4 rounded-full cursor-none transform hover:scale-110 hover:bg-[#1ee494]/80 duration-300">
             Tarification
           </button>
         </a>
