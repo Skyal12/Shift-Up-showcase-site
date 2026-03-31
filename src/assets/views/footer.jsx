@@ -54,8 +54,8 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <h3 className="text-lg font-semibold">Contact</h3>
           <ul className="flex flex-col gap-2 text-gray-300 text-sm">
-            <li>contact@shiftup.fr</li>
-            <li>+33 6 00 00 00 00</li>
+            <li>contact.shiftup@gmail.com</li>
+            <li>+33 02 98 67 86 60</li>
             <li>Elbeuf, France</li>
           </ul>
         </div>
