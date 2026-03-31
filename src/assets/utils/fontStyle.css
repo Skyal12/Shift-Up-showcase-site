@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "principal";
+  src: url(./assets/font/stacked.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "secondary";
+  src: url(./assets/font/bahnschrift.ttf) format("truetype");
+}
+
+.font-principal {
+  font-family: "principal", sans-serif;
+}
+
+.font-secondary {
+  font-family: "secondary", sans-serif;
+}

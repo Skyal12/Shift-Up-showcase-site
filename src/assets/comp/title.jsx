@@ -31,6 +31,7 @@ export default function Title() {
     experience: "Expérience",
     faq: "FAQ",
     tarif: "Tarif",
+    rassurer: "Rassurer",
     contact: "Contact",
   };
 
@@ -43,7 +44,7 @@ export default function Title() {
   if (!title) return null;
 
   return (
-    <div className="fixed bg-gray-800 text-white top-1/2 w-[15%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center left-[-5.5%] rotate-270">
+    <div className="fixed bg-[#1ee494] text-white top-1/2 w-[15%] h-12 flex justify-center rounded-md items-center z-20 transform origin-center left-[-5.5%] rotate-270">
       <h3 className="font-bold">{title}</h3>
     </div>
   );

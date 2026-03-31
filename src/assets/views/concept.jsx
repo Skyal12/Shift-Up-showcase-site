@@ -9,7 +9,7 @@ export default function Concept() {
   const content = {
     probleme: {
       title: "Une RSE souvent théorique",
-      text: "Malgré les engagements, de nombreuses entreprises peinent à mobiliser leurs équipes. Manque d’adhésion, absence d’indicateurs concrets, actions peu visibles : la RSE reste souvent déconnectée du terrain.",
+      text: "Malgré les engagements, de nombreuses entreprises peinent à mobiliser leurs équipes. Manque d’adhésion, absence d’indicateurs concrets, actions peu visibles",
     },
     solution: {
       title: "Une approche concrète et engageante",
@@ -24,11 +24,11 @@ export default function Concept() {
   return (
     <section
       id="concept"
-      className="concept snap-center h-screen bg-black text-white flex flex-col justify-center items-center w-full p-20"
+      className="concept snap-center h-auto bg-[#009378] text-white flex flex-col justify-center items-center w-full p-20"
     >
       <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
         <div
-          className={`w-1/3 transition-transform duration-300 cursor-none ${
+          className={`w-1/3 lg:w-1/5 transition-transform duration-300 cursor-none ${
             active === "probleme" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("probleme")}
@@ -36,7 +36,7 @@ export default function Concept() {
           <img src={imgProbleme} alt="Image du problème" />
         </div>
         <div
-          className={`w-1/3 transition-transform duration-300 cursor-none ${
+          className={`w-1/3 lg:w-1/5 transition-transform duration-300 cursor-none ${
             active === "solution" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("solution")}
@@ -44,7 +44,7 @@ export default function Concept() {
           <img src={imgSolution} alt="Image de la solution" />
         </div>
         <div
-          className={`w-1/3 transition-transform duration-300 cursor-none ${
+          className={`w-1/3 lg:w-1/5 transition-transform duration-300 cursor-none ${
             active === "soutien" ? "scale-109" : "hover:scale-105"
           }`}
           onClick={() => setActive("soutien")}

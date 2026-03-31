@@ -31,7 +31,7 @@ export default function BackTop() {
       `}
     >
       <button
-        className="bg-gray-800 w-16 h-12 flex justify-center items-center text-white p-2 rounded-md hover:bg-gray-600 hover:scale-110 transition-all duration-300 cursor-none"
+        className="bg-[#1ee494] w-16 h-12 flex justify-center items-center text-white p-2 rounded-md hover:bg-[#1ee494]/80 hover:scale-110 transition-all duration-300 cursor-none"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <svg

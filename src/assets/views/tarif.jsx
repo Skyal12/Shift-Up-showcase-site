@@ -5,7 +5,7 @@ export default function Tarif() {
 
   const content = {
     pro: {
-      title: "Offre Start",
+      title: "Start",
       utilisateur: "50 utilisateurs",
       description: `- Accès à l’application utilisateur
       - Missions et défis standards
@@ -16,7 +16,7 @@ export default function Tarif() {
       prix: "500€",
     },
     proPlus: {
-      title: "Offre Pro",
+      title: "Pro",
       utilisateur: "150 utilisateurs",
       description: `
       - Accès à l’application utilisateur
@@ -33,7 +33,7 @@ export default function Tarif() {
       prix: "1000€",
     },
     business: {
-      title: "Offre Entreprise",
+      title: "Entreprise",
       utilisateur: "Sur Mesure",
       description: `- Accès à l’application utilisateur
       - Missions et défis standards
@@ -59,11 +59,11 @@ export default function Tarif() {
   return (
     <section
       id="tarif"
-      className="tarif snap-center w-full flex flex-row justify-center items-center p-20 pt-32 pb-32 h-screen"
+      className="tarif snap-center w-full flex bg-[#ff4800] flex-row justify-center items-center p-8 md:p-20 pt-32 pb-32 h-screen"
     >
-      <div className="container-offers w-1/2 flex flex-col justify-center items-center">
+      <div className="container-offers w-1/2 flex flex-col md:flex-col justify-center items-center">
         <div
-          className={`offer1 mb-12 w-4/5 h-32 rounded-xl flex flex-col justify-center items-center bg-gray-600 transition-transform duration-300 ${
+          className={`offer1 mb-12 w-4/5 h-50 md:h-32 rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "pro" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("pro")}
@@ -82,7 +82,7 @@ export default function Tarif() {
         </div>
 
         <div
-          className={`offer2 mb-12 w-3/4 h-32 rounded-xl flex flex-col justify-center items-center bg-gray-600 transition-transform duration-300 ${
+          className={`offer2 mb-12 w-4/5 h-50 md:h-32 rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "proPlus" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("proPlus")}
@@ -101,7 +101,7 @@ export default function Tarif() {
         </div>
 
         <div
-          className={`offer3 mb-12 w-3/4 h-32 rounded-xl flex flex-col justify-center items-center bg-gray-600 transition-transform duration-300 ${
+          className={`offer3 mb-12 w-4/5 h-50 md:h-32 rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "business" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("business")}
@@ -120,8 +120,8 @@ export default function Tarif() {
         </div>
       </div>
 
-      <div className="container-info w-1/2 h-4/4 rounded-xl bg-gray-600 p-4 flex flex-col justify-center">
-        <div className="topLine flex flex-row justify-around">
+      <div className="container-info bg-[#FFF] text-black w-full h-4/4 md:w-1/2 md:h-4/4 rounded-xl p-4 flex flex-col justify-center">
+        <div className="topLine flex flex-row  justify-around">
           <h3
             className={`title text-3xl font-bold underline ${active === "business" ? "relative top-2" : ""}`}
           >
@@ -147,7 +147,7 @@ export default function Tarif() {
         </div>
         <div className={`cta flex flex-row justify-center items-center mt-4`}>
           <a href="#contact">
-            <button className="bg-gray-800 text-white w-32 p-4 rounded-full cursor-none transform hover:scale-110 duration-300">
+            <button className="bg-[#1ee494] text-white w-32 p-4 rounded-full cursor-none transform hover:scale-110 duration-300 hover:bg-[#1ee494]/80">
               Contact
             </button>
           </a>

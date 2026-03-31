@@ -5,22 +5,29 @@ import Faq from "./faq";
 import Contact from "./contact";
 import Tarif from "./tarif";
 import Experience from "./experience";
+import Rassurer from "./rassurer";
 
 // comp
 import LightRays from "../comp/lightRays";
 export default function Home() {
   return (
     <>
-      <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+      <div
+        style={{
+          width: "100%",
+          height: "100vh",
+          position: "relative",
+        }}
+      >
         <LightRays
           raysOrigin="top-center"
-          raysColor="#ffffff"
+          raysColor="#ff4800"
           raysSpeed={1}
-          lightSpread={0.5}
-          rayLength={3}
+          lightSpread={0.2}
+          rayLength={0.9}
           followMouse={true}
-          mouseInfluence={0.1}
-          noiseAmount={0}
+          mouseInfluence={0.3}
+          noiseAmount={0.16}
           distortion={0}
           className="custom-rays"
           pulsating={false}
@@ -31,6 +38,7 @@ export default function Home() {
       </div>
       <Concept />
       <Experience />
+      <Rassurer />
       <Tarif />
       <Faq />
       <Contact />

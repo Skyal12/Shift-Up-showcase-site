@@ -410,7 +410,7 @@ void main() {
   return (
     <div
       ref={containerRef}
-      className={`light-rays-container w-full h-screen relative overflow-hidden ${className}`.trim()}
+      className={`light-rays-container w-full h-screen relative overflow-hidden  ${className}`.trim()}
     />
   );
 };
