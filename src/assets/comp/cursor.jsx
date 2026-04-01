@@ -40,6 +40,6 @@ export default function Cursor() {
   }, []);
 
   return (
-    <div className="cursor fixed z-[10000] top-0 left-0 w-4 h-4 bg-[#ff4800] opacity-75 rounded-full pointer-events-none transition-transform duration-150"></div>
+    <div className="cursor fixed z-[10000] top-0 left-0 size-0 md:size-4 bg-[#ff4800] opacity-75 rounded-full pointer-events-none transition-transform duration-150"></div>
   );
 }

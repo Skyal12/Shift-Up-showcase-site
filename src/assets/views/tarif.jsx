@@ -46,7 +46,7 @@ export default function Tarif() {
   return (
     <section
       id="tarif"
-      className="tarif snap-center w-full h-auto flex bg-[#ff4800] flex-col md:flex-row justify-center items-center p-8 md:p-20 py-4 md:py-28 h-screen"
+      className="tarif snap-center w-full h-auto flex bg-[#ff4800] flex-col md:flex-row justify-center items-center p-8 md:p-20 py-12 md:py-28 h-screen"
     >
       <div className="container-offers w-full h-auto md:w-1/2 flex flex-col gap-4 justify-center items-center mb-12 md:mb-0">
         <div
@@ -120,7 +120,7 @@ export default function Tarif() {
         </div>
 
         <div className="description flex flex-col h-1/4 justify-center mt-4 md:mt-8">
-          <p className="text-justify text-xs md:text-sm pl-4 pr-4 pt-2 whitespace-pre">
+          <p className="text-justify text-xs md:text-sm pl-4 pr-4 pt-2 whitespace-pre-line">
             {content[active].description}
           </p>
         </div>

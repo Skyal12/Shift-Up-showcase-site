@@ -21,7 +21,7 @@ export default function NavBar() {
     >
       <div
         className={`logo flex justify-center items-center transition-all duration-300
-        ${shrink ? "w-16" : "w-32"}
+        ${shrink ? "hidden md:block w-16" : "w-32"}
       `}
       >
         <a href="#">
