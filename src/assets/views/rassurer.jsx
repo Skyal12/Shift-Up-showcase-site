@@ -137,22 +137,22 @@ export default function Rassurer() {
       <h3 className="font-secondary text-3xl font-bold text-[#ff4800] text-left w-full pl-16">
         Pourquoi Shift-Up ?
       </h3>
-      <div className="flex flex-row justify-center items-start px-12 gap-16">
-        <div className="flex flex-col items-center gap-4 bg-[#009378] py-12 px-4 rounded-2xl max-w-sm shadow-xl">
+      <div className="flex  flex-col md:flex-row justify-center items-start px-12 gap-4 md:gap-16">
+        <div className="flex flex-col w-full h-full items-center gap-4 bg-[#009378] py-12 px-2 md:px-4 rounded-2xl max-w-sm shadow-xl">
           <h3 className="text-xl font-semibold text-[#FFF]">Engagement</h3>
           <p className="text-center text-[#fff]">
             Impliquez vos équipes dans votre démarche RSE pour des résultats
             concrets.
           </p>
         </div>
-        <div className="flex flex-col items-center gap-4 bg-[#009378] py-12 px-4 rounded-2xl max-w-sm shadow-xl">
+        <div className="flex flex-col w-full h-full items-center gap-4 bg-[#009378] py-12 px-2 md:px-4 rounded-2xl max-w-sm shadow-xl">
           <h3 className="text-xl font-semibold text-[#FFF]">Impact</h3>
           <p className="text-center text-[#fff]">
             Transformez votre stratégie RSE en actions concrètes grâce à vos
             équipes.
           </p>
         </div>
-        <div className="flex flex-col items-center gap-4 bg-[#009378] py-12 px-4 rounded-2xl max-w-sm shadow-xl">
+        <div className="flex flex-col w-full h-full items-center gap-4 bg-[#009378] py-12 px-2 md:px-4 rounded-2xl max-w-sm shadow-xl">
           <h3 className="text-xl font-semibold text-[#FFF]">Simplicité</h3>
           <p className="text-center text-[#fff]">
             Une plateforme intuitive pour faciliter la gestion de votre RSE.

@@ -5,65 +5,52 @@ export default function Tarif() {
 
   const content = {
     pro: {
-      title: "Start",
+      title: "Starter",
       utilisateur: "50 utilisateurs",
-      description: `- Accès à l’application utilisateur
-      - Missions et défis standards
-      - Suivi des actions de base
-      - Support en ligne
-      - Accès aux statistiques et indicateurs
-      - Accès aux outils de gestion de missions et de suivi des actions`,
-      prix: "500€",
-    },
-    proPlus: {
-      title: "Pro",
-      utilisateur: "150 utilisateurs",
       description: `
       - Accès à l’application utilisateur
       - Missions et défis standards
       - Suivi des actions de base
       - Support en ligne
       - Accès aux statistiques et indicateurs
-      - Accès aux outils de gestion de missions et de suivi des actions
+      - Accès aux outils de gestion de missions`,
+      prix: "500€/mois",
+    },
+    proPlus: {
+      title: "Pro",
+      utilisateur: "150 utilisateurs",
+      description: `
+      - Actions Starter
       - Tableau de bord RH avancé
-      - Suivi des KPI RSE (engagement, impact, participation)
+      - Suivi des KPI RSE
       - Gestion des équipes et départements
       - Personnalisation des missions
       - Support prioritaire`,
-      prix: "1000€",
+      prix: "1000€/mois",
     },
     business: {
       title: "Entreprise",
       utilisateur: "Sur Mesure",
-      description: `- Accès à l’application utilisateur
-      - Missions et défis standards
-      - Suivi des actions de base
-      - Support en ligne
-      - Accès aux statistiques et indicateurs
-      - Accès aux outils de gestion de missions et de suivi des actions
-      - Tableau de bord RH avancé
-      - Suivi des KPI RSE (engagement, impact, participation)
-      - Gestion des équipes et départements
-      - Personnalisation des missions
-      - Support prioritaire
-      - Accompagnement dédié (onboarding & stratégie)
+      description: `
+      - Actions Pro 
+      - Accompagnement dédié
       - Création de programmes RSE personnalisés
       - Intégration avec vos outils internes
-      - Reporting avancé (appels d’offres, certifications)
+      - Reporting avancé
       - Suivi et optimisation continue
       `,
-      prix: "2000€",
+      prix: "2000€/mois",
     },
   };
 
   return (
     <section
       id="tarif"
-      className="tarif snap-center w-full flex bg-[#ff4800] flex-row justify-center items-center p-8 md:p-20 pt-32 pb-32 h-screen"
+      className="tarif snap-center w-full h-auto flex bg-[#ff4800] flex-col md:flex-row justify-center items-center p-8 md:p-20 py-4 md:py-28 h-screen"
     >
-      <div className="container-offers w-1/2 flex flex-col md:flex-col justify-center items-center">
+      <div className="container-offers w-full h-auto md:w-1/2 flex flex-col gap-4 justify-center items-center mb-12 md:mb-0">
         <div
-          className={`offer1 mb-12 w-4/5 h-50 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
+          className={`offer1 mx-4 md:mb-12 w-full md:w-4/5 h-auto py-4 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "pro" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("pro")}
@@ -76,13 +63,13 @@ export default function Tarif() {
           </div>
           <div className="details w-full flex flex-row justify-around items-center">
             <p className="text-center pl-4 pr-4 pt-2">
-              Une offre adaptée à la taille et aux enjeux de votre entreprise.
+              Une offre adaptée à votre entreprise.
             </p>
           </div>
         </div>
 
         <div
-          className={`offer2 mb-12 w-4/5 h-50 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
+          className={`offer2 mx-4 md:mb-12 w-full md:w-4/5 h-auto py-4 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "proPlus" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("proPlus")}
@@ -101,7 +88,7 @@ export default function Tarif() {
         </div>
 
         <div
-          className={`offer3 mb-12 w-4/5 h-50 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
+          className={`offer3 mx-4 md:mb-12 w-full md:w-4/5 h-auto py-4 md:h-32 shadow-lg rounded-xl flex flex-col justify-center items-center bg-[#FFF] text-black transition-transform duration-300 ${
             active === "business" ? "scale-110" : "hover:scale-105"
           }`}
           onClick={() => setActive("business")}
@@ -120,28 +107,26 @@ export default function Tarif() {
         </div>
       </div>
 
-      <div className="container-info bg-[#FFF] shadow-lg text-black w-full h-4/4 md:w-1/2 md:h-4/4 rounded-xl p-4 flex flex-col justify-center">
+      <div className="container-info bg-[#FFF] shadow-lg text-black w-full h-auto md:h-2/3 md:w-1/2 rounded-xl p-4 md:px-4 md:py-12 flex flex-col justify-center">
         <div className="topLine flex flex-row  justify-around">
           <h3
-            className={`title font-primary underline text-5xl font-bold ${active === "business" ? "relative top-2" : ""}`}
+            className={`title font-primary underline text-3xl md:text-5xl font-bold`}
           >
             {content[active].title}
           </h3>
-          <h3
-            className={`utilisateur text-xl ${active === "business" ? "relative top-3" : ""}`}
-          >
+          <h3 className={`utilisateur text-md md:text-xl`}>
             {content[active].utilisateur}
           </h3>
         </div>
 
-        <div className="description flex flex-col h-3/4 justify-center mt-8">
-          <p className="text-justify text-sm pl-4 pr-4 pt-2 whitespace-pre-line">
+        <div className="description flex flex-col h-1/4 justify-center mt-4 md:mt-8">
+          <p className="text-justify text-xs md:text-sm pl-4 pr-4 pt-2 whitespace-pre">
             {content[active].description}
           </p>
         </div>
 
         <div
-          className={`bottomLine flex flex-row justify-end pr-8 mb-4 ${active === "business" ? "mt-0" : "mt-16"}`}
+          className={`bottomLine flex flex-row justify-end pr-8 mb-4 md:mb-8 mt-8`}
         >
           <h3 className={`prix text-2xl`}>{content[active].prix}</h3>
         </div>

@@ -24,9 +24,9 @@ export default function Concept() {
   return (
     <section
       id="concept"
-      className="concept snap-center h-auto bg-[#009378] text-white flex flex-col justify-center items-center w-full p-20"
+      className="concept snap-center h-auto bg-[#009378] text-white flex flex-col justify-center items-center w-full p-10 md:p-20"
     >
-      <div className="container-img flex flex-row gap-12 w-full p-8 justify-center items-center mb-16">
+      <div className="container-img flex flex-row gap-4 md:gap-12 w-full p-0 md:p-8justify-center items-center mb-16">
         <div
           className={`w-1/3 lg:w-1/5 shadow-2xl transition-transform duration-300 cursor-none ${
             active === "probleme" ? "scale-109" : "hover:scale-105"
@@ -48,7 +48,7 @@ export default function Concept() {
           <img
             src={imgSolution}
             alt="Image de la solution"
-            className="rounded-xl"
+            className="rounded-xl w-full h-full object-cover"
           />
         </div>
         <div

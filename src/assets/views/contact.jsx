@@ -2,7 +2,7 @@ export default function contact() {
   return (
     <section
       id="contact"
-      className="contact snap-center bg-[#ededed] h-screen w-full mx-auto flex flex-col h-auto p-20 pt-32 pb-32"
+      className="contact snap-center bg-[#ededed] h-screen w-full mx-auto flex flex-col h-auto px-10 md:px-20 py-32"
     >
       <h3 className="font-primary text-6xl text-[#ff4800] font-bold mb-4">
         Parlons de votre projet

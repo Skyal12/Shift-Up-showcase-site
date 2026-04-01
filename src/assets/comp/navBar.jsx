@@ -16,7 +16,7 @@ export default function NavBar() {
   return (
     <nav
       className={`navBar font-secondary z-200 sticky top-4 left-0 h-16 backdrop-blur-md text-white flex flex-row items-center mx-auto transition-all duration400
-        ${shrink ? "w-3/4 lg:w-1/2 justify-center lg:justify-around rounded-full bg-[#ff480090]" : "w-full justify-between rounded-none bg-[#ff480099]"}
+        ${shrink ? "w-5/6 md:w-1/2 justify-center lg:justify-around rounded-full bg-[#ff480090]" : "w-full justify-between rounded-none bg-[#ff480099]"}
       `}
     >
       <div
@@ -29,7 +29,7 @@ export default function NavBar() {
         </a>
       </div>
       <div
-        className={`link flex mx-4 md:mx-12text-sm justify-center items-center transition-all duration-300
+        className={`link flex px-2 md:px-4 md:mx-12text-sm justify-center items-center transition-all duration-300
         ${shrink ? "gap-4" : "gap-8"}
       `}
       >

@@ -34,13 +34,13 @@ export default function faq() {
   return (
     <section
       id="faq"
-      className="faq snap-center bg-white text-black flex justify-center items-center w-full h-screen p-16 pt-32 pb-32 gap-12"
+      className="faq snap-center bg-white text-black flex flex-col md:flex-row justify-center items-center w-full h-screen px-8 md:px-16 py-32 gap-12"
     >
-      <div className="title w-1/3">
+      <div className="title w-full md:w-1/3">
         <h3 className="font-primary text-4xl mb-4">FAQ</h3>
         <h4 className="font-secondary text-2xl">Question frequente</h4>
       </div>
-      <div className="question w-1/2">
+      <div className="question w-full md:w-1/2">
         {faqs.map((faq, index) => (
           <div
             className="border-b border-slate-200 py-4 w-full"
