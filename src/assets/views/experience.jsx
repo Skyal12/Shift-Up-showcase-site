@@ -68,7 +68,7 @@ export default function ShiftUpDeck() {
 
   return (
     <>
-      <section className="relative w-full max-w-6xl mx-auto py-24 px-4 flex flex-col gap-24" style={{ perspective: '1200px' }}>
+      <section id="experience" className="relative w-full max-w-6xl mx-auto py-24 px-4 flex flex-col gap-24" style={{ perspective: '1200px' }}>
         
         {cards.map((card, index) => {
           const topOffset = `calc(8vh + ${index * 28}px)`;
