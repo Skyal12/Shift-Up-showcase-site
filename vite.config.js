@@ -5,6 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Shift-Up-showcase-site/', 
+  
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
